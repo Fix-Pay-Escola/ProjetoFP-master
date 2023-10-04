@@ -17,8 +17,9 @@ body {
 
 body.dark {
     background-color: #133741;
-    color:#eaebed;
+    color: #eaebed;
 }
+
 .main {
     display: flex;
     justify-content: center;
@@ -34,8 +35,8 @@ body.dark {
 
 .main.dark {
     background-color: #3c3d3f;
-    transition: background 0.2s linear;
 }
+
 
 div.left {
     flex-direction: column;
@@ -44,7 +45,6 @@ div.left {
     margin-top: -25vh;
     width: 50%;
 }
-
 .left h1 {
     justify-content: center;
     align-items: center;
@@ -52,11 +52,11 @@ div.left {
     margin-left: 4vh;
 }
 
-.acv{
+.log{
     color:#4796ac;
 }
 .right {
-    flex: 1;
+    flex:1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,22 +66,19 @@ div.left {
 .checar {
     align-items: flex-end;
     justify-content: flex-end;
-    display: flex;
+
 }
 
 .checkbox {
-    display:flex;
     position: absolute;
     box-shadow: none;
-    align-items: end;
-    justify-content: end;
+    justify-content: center;
     width: min-content;
     opacity: 0;
 }
 
 .fundo {
-    border-top: 100px;
-    background-color: #0a2027;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,6 +89,7 @@ div.left {
     transform: scale(1.5);
     width: 26.5px;
     height: 13px;
+    margin-top: 10px;
 }
 
 .fundo .ball {
@@ -106,29 +104,25 @@ div.left {
 }
 
 .checkbox:checked+.fundo .ball {
-    transform: translateX(14px);
+    transform: translateX(1.6vh);
 }
 
 .fundo .bi-sun-fill {
     color: rgb(235, 184, 81);
-    font-size: 7.5px;
-    display: flex;
-    left:3.1px;
-    position: relative;
+    font-size: 7.5px;position: relative;
+    left: 3px;
 }
 
 .fundo .bi-moon-stars-fill {
     color: rgb(237, 235, 215);
-    font-size: 6.5px;
-    left: -1.6px;
-    position: relative;
+    font-size: 6.5px;position: relative;
+    left: -2px;
 }
 
 #img-login {
     width: 100%;
     height: auto;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -138,22 +132,18 @@ div.left {
     max-width: 400px;
     margin: auto;
     padding: 10px;
-    
 }
-
 .dark .cont{
     background-color: #303133;
-    transition: background 0.2s linear;
     color: #eaebed;
 }
-
 label {
-    display: flex;
+    display:flex;
     border-radius: 5px;
     width: 10vw;
     margin: auto auto -2.5vh 6vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;   
 }
 
 input {
@@ -164,7 +154,7 @@ input {
     border-radius: 5px;
     margin: 10px auto;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.36);
-    width: 70%;
+    width: 70%;;
 }
 
 button {
@@ -182,9 +172,11 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.163);
 }
 
+.boton:hover{
+    background-color: #02495f;
+}
 .boton.dark{
     background-color: #133741;
     color: #cad4d7;
@@ -192,32 +184,25 @@ button {
 .boton.dark:hover{
     background-color: #0b2127;
 }
-
-.dark.cancelbtn {
+.cancelbtn{
+    background-color: #a3b3b8;
+}
+.cancelbtn:hover{
+    background-color:#667377;
+}
+.dark .cancelbtn {
     background-color:  #435359;
     color: #cad4d7;
 }
-.dark.cancelbtn:hover{
+.dark .cancelbtn:hover{
     background-color: #2e393d;
 }
 
-button:hover {
-    background-color: #01546d;
-}
-
-button.cancelbtn {
-    background-color: #a3bac3;
-}
-
-button.cancelbtn:hover {
-    background-color: #81959d;
-}
-
-footer { 
+footer{
     width: 65%;
     margin-top: 5px;
 }
-.change-adm {
+.change-user {
     display: flex;
     justify-content: end;
     color: #016280;
@@ -225,6 +210,6 @@ footer {
     font-size: 9pt;
 }
 
-.change-adm:hover {
+.change-user:hover {
     text-decoration: underline;
 }
